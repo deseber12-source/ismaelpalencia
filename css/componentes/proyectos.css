@@ -1,0 +1,40 @@
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.proyecto-card {
+    background: var(--color-secundario);
+    overflow: hidden;
+    border: 1px solid var(--color-primario);
+    transition: var(--transicion);
+}
+
+.proyecto-card:hover {
+    transform: scale(1.02);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.proyecto-card h3 {
+    font-size: 1.8rem;
+    margin: 1rem 1rem 0.5rem;
+    color: var(--color-primario);
+}
+
+.proyecto-card p {
+    margin: 0 1rem 1rem;
+    color: var(--color-texto-oscuro);
+}
+
+.proyecto-card .btn {
+    margin: 0 1rem 1rem;
+    display: inline-block;
+}

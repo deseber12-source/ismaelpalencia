@@ -1,0 +1,48 @@
+bar-la-cantina/
+├── index.html
+├── css/
+│   ├── main.css
+│   └── componentes/
+│       ├── header.css
+│       ├── hero.css
+│       ├── sobre-nosotros.css
+│       ├── menu.css
+│       ├── eventos.css
+│       ├── galeria.css
+│       ├── contacto.css
+│       └── footer.css
+├── js/
+│   ├── componentes.js
+│   ├── menu.js
+│   ├── formularios.js
+│   └── main.js
+├── assets/
+│   ├── img/
+│   │   ├── hero-bar.jpg
+│   │   ├── about-bar.jpg
+│   │   ├── botella1.jpg
+│   │   ├── botella2.jpg
+│   │   ├── coctel1.jpg
+│   │   ├── coctel2.jpg
+│   │   ├── cerveza1.jpg
+│   │   ├── cerveza2.jpg
+│   │   ├── botana1.jpg
+│   │   ├── botana2.jpg
+│   │   ├── evento1.jpg
+│   │   ├── evento2.jpg
+│   │   ├── galeria1.jpg
+│   │   ├── galeria2.jpg
+│   │   ├── galeria3.jpg
+│   │   └── galeria4.jpg
+│   └── icons/
+│       ├── logo.svg (opcional)
+│       └── favicon.ico
+└── componentes/
+    ├── header.html
+    ├── hero.html
+    ├── sobre-nosotros.html
+    ├── menu.html
+    ├── eventos.html
+    ├── galeria.html
+    ├── contacto.html
+    └── footer.html

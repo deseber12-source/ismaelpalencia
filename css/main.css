@@ -1,0 +1,214 @@
+/* Variables globales */
+:root {
+    --color-fondo: #0A0A0A;
+    --color-primario: #C5A572;
+    --color-secundario: #2E2E2E;
+    --color-acento: #D4AF37;
+    --color-texto-claro: #F5F5F5;
+    --color-texto-oscuro: #CCCCCC;
+    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-texto: 'Cormorant Garamond', serif;
+    --fuente-manuscrita: 'Dancing Script', cursive;
+    --espaciado: 1rem;
+    --border-radius: 4px;
+    --max-width: 1200px;
+    --sombra: 0 4px 10px rgba(0,0,0,0.3);
+    --sombra-fuerte: 0 10px 20px rgba(0,0,0,0.5);
+    --transicion: all 0.3s ease;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-texto);
+    background-color: var(--color-fondo);
+    color: var(--color-texto-claro);
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: calc(var(--espaciado) * 5) 0;
+}
+
+/* Tipografía */
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-texto-claro);
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: var(--color-primario);
+    margin-top: 0.5rem;
+}
+
+h2 span {
+    font-family: var(--fuente-manuscrita);
+    color: var(--color-primario);
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: transparent;
+    color: var(--color-texto-claro);
+    border: 1px solid var(--color-primario);
+    font-family: var(--fuente-titulos);
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: var(--transicion);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background: var(--color-primario);
+    color: var(--color-fondo);
+    border-color: var(--color-primario);
+}
+
+.btn-acento {
+    background: var(--color-acento);
+    border-color: var(--color-acento);
+    color: var(--color-fondo);
+}
+
+.btn-acento:hover {
+    background: transparent;
+    color: var(--color-acento);
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    box-shadow: var(--sombra-fuerte);
+    z-index: 100;
+    transition: var(--transicion);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128C7E;
+}
+
+/* Toast notification */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--color-secundario);
+    border-left: 4px solid var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    box-shadow: var(--sombra-fuerte);
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-family: var(--fuente-texto);
+    font-size: 1.1rem;
+    min-width: 300px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.toast.success {
+    border-left-color: #2ecc71;
+}
+
+.toast.success i {
+    color: #2ecc71;
+}
+
+.toast.error {
+    border-left-color: #e74c3c;
+}
+
+.toast.error i {
+    color: #e74c3c;
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toast i {
+    font-size: 1.5rem;
+}
+
+.toast span {
+    flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .toast {
+        min-width: 250px;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}

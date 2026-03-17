@@ -1,0 +1,47 @@
+.testimonios {
+    background: var(--color-fondo);
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonio {
+    background: var(--color-secundario);
+    padding: 2rem;
+    border-left: 3px solid var(--color-primario);
+}
+
+.testimonio p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--color-texto-claro);
+}
+
+.testimonio-cliente {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonio-cliente img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonio-cliente h4 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+    margin-bottom: 0.2rem;
+}
+
+.testimonio-cliente p {
+    font-size: 0.9rem;
+    color: var(--color-texto-oscuro);
+    margin: 0;
+}

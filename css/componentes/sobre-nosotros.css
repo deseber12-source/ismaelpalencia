@@ -1,0 +1,28 @@
+.sobre-nosotros {
+    background: #fff;
+}
+
+.sobre-nosotros .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sobre-nosotros-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.sobre-nosotros-image {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--sombra-fuerte);
+}
+
+@media (max-width: 768px) {
+    .sobre-nosotros .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
