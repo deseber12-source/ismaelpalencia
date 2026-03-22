@@ -1,4 +1,4 @@
-const API_URL = 'https://apiesmaralda.up.railway.app/api'; 
+
 document.addEventListener('DOMContentLoaded', async () => {
     const container = document.getElementById('post-container');
     

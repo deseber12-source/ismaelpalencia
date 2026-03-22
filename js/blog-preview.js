@@ -1,5 +1,4 @@
 // js/blog-preview.js
-const API_URL = 'https://apiesmaralda.up.railway.app/api'; // Cambiar en producción
 
 function showToast(message, type, duration) { /* si quieres notificaciones, pero no es necesario aquí */ }
 

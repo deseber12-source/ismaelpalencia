@@ -1,0 +1,1 @@
+const API_URL = 'https://apiesmaralda.up.railway.app/api'; // Cambiar en producción por https://tu-backend.up.railway.app/api
