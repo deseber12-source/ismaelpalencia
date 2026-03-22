@@ -1,0 +1,133 @@
+.pricing {
+    background: var(--color-fondo);
+    padding: 4rem 0;
+}
+
+.pricing-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 2rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.pricing-card {
+    background: var(--color-secundario);
+    border: 1px solid var(--color-primario);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--color-acento);
+    transform: scale(1.02);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.02) translateY(-5px);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-header h3 {
+    font-size: 1.8rem;
+    color: var(--color-primario);
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--color-texto-claro);
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--color-texto-oscuro);
+}
+
+.pricing-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.pricing-features li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-texto-claro);
+}
+
+.pricing-features i {
+    width: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.pricing-features .fa-check-circle {
+    color: #2ecc71;
+}
+
+.pricing-features .fa-times-circle {
+    color: #e74c3c;
+}
+
+.not-included {
+    opacity: 0.6;
+}
+
+.pricing-footer {
+    text-align: center;
+}
+
+.pricing-footer .btn {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-footer small {
+    font-size: 0.8rem;
+    color: var(--color-texto-oscuro);
+    display: block;
+}
+
+.pricing-note {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--color-secundario);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--color-texto-oscuro);
+}
+
+.pricing-note a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+    .pricing-card.featured:hover {
+        transform: translateY(-5px);
+    }
+}
