@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ismael Palencia</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/componentes/blog-listado.css">
+</head>
+<body>
+    <div data-component="header"></div>
+    
+    <main>
+        <section class="blog-listado">
+            <div class="container">
+                <h1><span>Artículos</span>Blog</h1>
+                <div id="posts-container" class="posts-grid">
+                    <!-- Los posts se cargarán dinámicamente con JS -->
+                    <div class="loading">Cargando artículos...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div data-component="footer"></div>
+    
+    <script src="js/componentes.js"></script>
+    <script src="js/blog-listado.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
