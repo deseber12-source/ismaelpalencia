@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5500/api'; // Cambiar en producción por https://tu-backend.up.railway.app/api
+const API_URL = 'https://apiesmaralda.up.railway.app/api'; // Cambiar en producción por https://tu-backend.up.railway.app/api
 
 let turnstileWidgetId = null;
 let isSubmitting = false;
