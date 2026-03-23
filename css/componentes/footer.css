@@ -1,8 +1,19 @@
 .footer {
-    background: var(--color-fondo);
-    border-top: 1px solid var(--color-primario);
+    background: linear-gradient(145deg, rgba(5,5,5,0.95), rgba(15,15,15,0.95));
+    border-top: 1px solid rgba(179, 0, 45, 0.5);
     padding: 2rem 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(255, 0, 85, 0.1), transparent 60%);
+    opacity: 0.6;
+    pointer-events: none;
 }
 
 .footer-content {
@@ -19,5 +30,6 @@
 }
 
 .footer-links a:hover {
-    color: var(--color-primario);
+    color: var(--color-acento);
+    text-shadow: 0 0 8px rgba(255, 0, 85, 0.5);
 }

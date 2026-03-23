@@ -10,28 +10,44 @@
 }
 
 .servicio-card {
-    background: var(--color-fondo);
+    background: linear-gradient(145deg, rgba(10,10,10,0.9), rgba(20,20,20,0.95));
     padding: 2rem;
-    border: 1px solid var(--color-primario);
+    border: 1px solid rgba(179, 0, 45, 0.4);
     transition: var(--transicion);
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicio-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255, 0, 85, 0.15), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.servicio-card:hover::before {
+    opacity: 1;
 }
 
 .servicio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--sombra-fuerte);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
 .servicio-card i {
     font-size: 3rem;
-    color: var(--color-primario);
+    color: var(--color-acento);
+    text-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
     margin-bottom: 1rem;
 }
 
 .servicio-card h3 {
     font-family: var(--fuente-titulos);
     margin-bottom: 1rem;
-    color: var(--color-primario);
+    color: var(--color-texto-claro);
 }
 
 .servicio-card p {

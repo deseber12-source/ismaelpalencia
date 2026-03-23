@@ -1,19 +1,20 @@
 /* Variables globales */
 :root {
-    --color-fondo: #0A0A0A;
-    --color-primario: #C5A572;
-    --color-secundario: #2E2E2E;
-    --color-acento: #D4AF37;
-    --color-texto-claro: #F5F5F5;
-    --color-texto-oscuro: #CCCCCC;
+    --color-fondo: #050505;
+    --color-primario: #B3002D;
+    --color-secundario: #1A1A1A;
+    --color-acento: #FF0055;
+    --color-gradient: linear-gradient(135deg, #5A0000 0%, #FF0055 100%);
+    --color-texto-claro: #F8F8F8;
+    --color-texto-oscuro: #E0B3C2;
     --fuente-titulos: 'Playfair Display', serif;
     --fuente-texto: 'Cormorant Garamond', serif;
     --fuente-manuscrita: 'Dancing Script', cursive;
     --espaciado: 1rem;
     --border-radius: 4px;
     --max-width: 1200px;
-    --sombra: 0 4px 10px rgba(0,0,0,0.3);
-    --sombra-fuerte: 0 10px 20px rgba(0,0,0,0.5);
+    --sombra: 0 4px 10px rgba(0,0,0,0.5);
+    --sombra-fuerte: 0 10px 25px rgba(0,0,0,0.7);
     --transicion: all 0.3s ease;
 }
 
@@ -70,13 +71,13 @@ h2::after {
     display: block;
     width: 80px;
     height: 2px;
-    background: var(--color-primario);
+    background: var(--color-gradient);
     margin-top: 0.5rem;
 }
 
 h2 span {
     font-family: var(--fuente-manuscrita);
-    color: var(--color-primario);
+    color: var(--color-acento);
     font-size: 2.2rem;
     display: block;
     margin-bottom: 0.5rem;
@@ -108,20 +109,22 @@ h2 span {
 }
 
 .btn:hover {
-    background: var(--color-primario);
-    color: var(--color-fondo);
-    border-color: var(--color-primario);
+    background: var(--color-gradient);
+    color: var(--color-texto-claro);
+    border-color: var(--color-acento);
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
 }
 
 .btn-acento {
-    background: var(--color-acento);
-    border-color: var(--color-acento);
-    color: var(--color-fondo);
+    background: var(--color-gradient);
+    border: none;
+    color: var(--color-texto-claro);
 }
 
 .btn-acento:hover {
     background: transparent;
     color: var(--color-acento);
+    box-shadow: 0 0 12px rgba(255, 0, 85, 0.6);
 }
 
 /* Botón flotante WhatsApp */

@@ -195,3 +195,59 @@
     margin-bottom: 0.8rem;
     line-height: 1.5;
 }
+
+/* CTA centrado y estético */
+.pricing-cta-centered {
+    margin: 3rem 0;
+}
+
+.cta-box-centered {
+    background: linear-gradient(135deg, var(--color-secundario) 0%, var(--color-fondo) 100%);
+    border: 1px solid var(--color-primario);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--sombra);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-box-centered i {
+    font-size: 3rem;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.cta-box-centered h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-primario);
+}
+
+.cta-box-centered ul {
+    list-style: none;
+    text-align: left;
+    max-width: 400px;
+    margin: 1rem auto;
+    padding: 0;
+}
+
+.cta-box-centered li {
+    margin-bottom: 0.5rem;
+    color: var(--color-texto-claro);
+}
+
+.cta-box-centered .btn {
+    margin-top: 1rem;
+}
+
+/* Info centrada al final */
+.pricing-info-centered {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--color-secundario);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-texto-oscuro);
+}

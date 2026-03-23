@@ -10,9 +10,30 @@
 }
 
 .testimonio {
-    background: var(--color-secundario);
+    background: linear-gradient(145deg, rgba(10,10,10,0.95), rgba(25,25,25,0.95));
     padding: 2rem;
-    border-left: 3px solid var(--color-primario);
+    border-left: 3px solid rgba(179, 0, 45, 0.6);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transicion);
+}
+
+.testimonio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(255, 0, 85, 0.12), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.testimonio:hover::before {
+    opacity: 1;
+}
+
+.testimonio:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
 .testimonio p {
@@ -36,7 +57,7 @@
 
 .testimonio-cliente h4 {
     font-family: var(--fuente-titulos);
-    color: var(--color-primario);
+    color: var(--color-texto-claro);
     margin-bottom: 0.2rem;
 }
 

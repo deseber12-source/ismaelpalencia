@@ -10,8 +10,33 @@
 
 .contacto-info {
     padding: 2rem;
-    background: var(--color-fondo);
-    border: 1px solid var(--color-primario);
+    background: linear-gradient(145deg, rgba(10,10,10,0.95), rgba(25,25,25,0.95));
+    border: 1px solid rgba(179, 0, 45, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.contacto-form {
+    padding: 2rem;
+    background: linear-gradient(145deg, rgba(10,10,10,0.95), rgba(25,25,25,0.95));
+    border: 1px solid rgba(179, 0, 45, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.contacto-info::before,
+.contacto-form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255, 0, 85, 0.12), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.contacto-info:hover::before,
+.contacto-form:hover::before {
+    opacity: 1;
 }
 
 .contacto-info-item {
@@ -23,31 +48,26 @@
 
 .contacto-info-item i {
     font-size: 1.5rem;
-    color: var(--color-primario);
+    color: var(--color-acento);
+    text-shadow: 0 0 8px rgba(255, 0, 85, 0.5);
     min-width: 2rem;
 }
 
 .contacto-info-item h4 {
     font-family: var(--fuente-titulos);
     margin-bottom: 0.2rem;
-    color: var(--color-primario);
+    color: var(--color-texto-claro);
 }
 
 .contacto-info-item p {
     color: var(--color-texto-oscuro);
 }
 
-.contacto-form {
-    padding: 2rem;
-    background: var(--color-fondo);
-    border: 1px solid var(--color-primario);
-}
-
 .contacto-form h3 {
     font-family: var(--fuente-titulos);
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: var(--color-primario);
+    color: var(--color-texto-claro);
 }
 
 .form-group {
@@ -66,7 +86,7 @@
     width: 100%;
     padding: 0.8rem;
     background: var(--color-secundario);
-    border: 1px solid var(--color-primario);
+    border: 1px solid rgba(179, 0, 45, 0.4);
     color: var(--color-texto-claro);
     font-family: var(--fuente-texto);
     font-size: 1rem;
