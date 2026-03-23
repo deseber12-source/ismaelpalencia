@@ -18,10 +18,19 @@
         <section class="blog-listado">
             <div class="container">
                 <h1><span>Artículos</span>Blog</h1>
+
+                <div class="blog-search">
+                    <input type="text" id="search-input" placeholder="Buscar artículos...">
+                    <button id="search-btn">Buscar</button>
+                </div>
+
                 <div id="posts-container" class="posts-grid">
                     <!-- Los posts se cargarán dinámicamente con JS -->
                     <div class="loading">Cargando artículos...</div>
                 </div>
+                
+                <div id="pagination-controls" class="pagination"></div>
+
             </div>
         </section>
     </main>

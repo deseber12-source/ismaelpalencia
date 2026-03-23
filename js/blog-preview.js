@@ -8,7 +8,8 @@ async function cargarVistaPreviaBlog() {
 
     try {
         const response = await fetch(`${API_URL}/posts`); // Sin filtro, trae todos los publicados
-        const posts = await response.json();
+        const data = await response.json();
+        const posts = data.posts;
 
         if (posts.length === 0) {
             container.innerHTML = '<p class="no-posts">Próximamente más artículos.</p>';
